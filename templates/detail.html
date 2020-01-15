@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel = "stylesheet" href = "{% static 'detail.css' %}">
+{% endblock head %}
+
+{% block title %}
+    {{shelf.title}}
+{% endblock title%} 
+
+{% block body %}
+<div>
+    <p>{{shelf.description}}</p>
+    </div>
+    <img src={{shelf.img}}>
+    <p><a href ={% url 'home' %}>keep browsing</a></p>
+</body>
+{% endblock body %}
