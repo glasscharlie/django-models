@@ -1,0 +1,15 @@
+h1 {
+    color:red;
+    text-align:center;
+    font-size: 5em;
+}
+
+body {
+    background-color: blue;
+}
+
+a{
+    color: hotpink;
+    font-size: 2em;
+    text-decoration: None;
+}

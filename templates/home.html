@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel = "stylesheet" href = "{% static 'home.css' %}">
+{% endblock head %}
+
+{% block title %}
+    What's on the shelf:
+{% endblock title%} 
+
+{% block body %}
+{% for shelf in shelf %}
+    <div>
+    <p> <a href= {% url 'detail' shelf.id %}>{{shelf.title}}</a> </p>
+    </div>
+{% endfor %}
+{% endblock body %}

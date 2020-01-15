@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel = "stylesheet" href = "{% static 'base.css' %}">
+{% block head  %}
+{% endblock head %}
+</head>
+<body>
+    <h1>
+        {% block title  %}
+        {% endblock title %} 
+    </h1>
+
+    {% block body  %}
+    {% endblock body %}
+
+
+</body>
+
+<foot>
+
+</foot>
+
+</html>
